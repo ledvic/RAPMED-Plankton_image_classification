@@ -1,0 +1,2 @@
+# Deep Learning Frameworks  
+tensorflow==2.14.0 

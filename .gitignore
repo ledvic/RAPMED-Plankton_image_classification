@@ -10,3 +10,336 @@
 # ignore specific file path
 
 # add an exception
+
+# ============================================================================
+# Python Cache & Compiled Files
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============================================================================
+# Virtual Environments
+# ============================================================================
+venv/
+env/
+ENV/
+.venv
+.virtualenv/
+pipenv/
+
+# ============================================================================
+# Data Files (Raw & Processed)
+# ============================================================================
+data/raw/*
+data/processed/*
+data/interim/*
+data/external/*
+data/features/gabor/*
+data/features/lbp/*
+data/features/sift/*
+data/features/hog/*
+
+# Allow directories to be tracked
+!data/raw/
+!data/processed/
+!data/features/
+!data/features/gabor/
+!data/features/lbp/
+!data/features/sift/
+!data/features/hog/
+
+# Data file formats
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.parquet
+
+# ============================================================================
+# Model Artifacts & Checkpoints
+# ============================================================================
+models/checkpoints/*
+models/checkpoints_TL/*
+models/checkpoints_TLFT/*
+models/final/*
+models/pretrained/*
+models/saved_models/*
+
+!models/checkpoints/
+!models/checkpoints_TL/
+!models/checkpoints_TLFT/
+!models/final/
+!models/pretrained/
+!models/saved_models/
+
+*.ckpt
+*.pth
+*.pt
+*.weights
+*.pb
+*.onnx
+*.tflite
+*.keras
+*.model
+
+# ============================================================================
+# Training & Experiment Logs
+# ============================================================================
+logs/*
+logs/tensorboard/*
+logs/training/*
+tensorboard_logs/
+mlruns/
+wandb/
+runs/
+outputs/
+experiments/
+
+!logs/
+!logs/tensorboard/
+!logs/training/
+
+*.log
+*.out
+*.err
+
+# ============================================================================
+# Results & Outputs
+# ============================================================================
+results/*
+results/figures/*
+results/metrics/*
+results/predictions/*
+plots/
+figures/
+
+!results/
+!results/figures/
+!results/metrics/
+!results/predictions/
+
+# ============================================================================
+# PyTorch Lightning Specific
+# ============================================================================
+.lr_find_*.ckpt
+lightning_logs/
+checkpoints/
+
+# ============================================================================
+# Jupyter Notebook
+# ============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+notebooks/.ipynb_checkpoints/
+
+# ============================================================================
+# IDE & Editor Files
+# ============================================================================
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+*.sublime-project
+*.sublime-workspace
+
+*.swp
+*.swo
+*~
+.vim/
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+.directory
+.Trash-*
+
+# ============================================================================
+# Testing & Coverage
+# ============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+nosetests.xml
+test-results/
+.cache
+
+# ============================================================================
+# Documentation
+# ============================================================================
+docs/_build/
+docs/_static/
+docs/_templates/
+docs/build/
+site/
+.sphinx/
+
+# ============================================================================
+# Distribution & Packaging
+# ============================================================================
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================================================
+# Environment & Configuration Files
+# ============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+.envrc
+
+!.env.example
+!configs/*.yaml.example
+
+secrets/
+*.pem
+*.key
+*.cert
+
+# ============================================================================
+# Database Files
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# Temporary Files
+# ============================================================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+.cache/
+
+# ============================================================================
+# Configuration Files (Sensitive)
+# ============================================================================
+configs/local_*.yaml
+configs/*_secret.yaml
+configs/production.yaml
+
+!configs/base_config.yaml
+!configs/efficientnet_config.yaml
+!configs/hybrid_config.yaml
+!configs/*.example.yaml
+
+# ============================================================================
+# Machine Learning Specific
+# ============================================================================
+saved_model/
+
+# ============================================================================
+# Profiling
+# ============================================================================
+*.prof
+*.lprof
+profile_results/
+
+# ============================================================================
+# Miscellaneous
+# ============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+*.large
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+.pytype/
+
+.pyre/
+
+.pyright/
+
+# ============================================================================
+# Project Specific
+# ============================================================================
+src/features/extracted/*
+!src/features/extracted/
+
+src/utils/.registry_cache
+
+src/training/.checkpoints_temp/*
+!src/training/.checkpoints_temp/
+
+src/evaluation/outputs/*
+!src/evaluation/outputs/
+
+# ============================================================================
+# Keep Important Structure Files
+# ============================================================================
+!src/__init__.py
+!src/config/__init__.py
+!src/data/__init__.py
+!src/features/__init__.py
+!src/models/__init__.py
+!src/training/__init__.py
+!src/evaluation/__init__.py
+!src/utils/__init__.py
+
+!README.md
+!*/README.md
